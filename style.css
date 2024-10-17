@@ -81,16 +81,49 @@ header, body, footer {
 /* Header */
 
 .header {
-    background-color: red;
-
+    background-color: hsl(53, 33%, 68%);
+    height: 12vh;
 }
 
+.navbar {
+    display: flex;
+    height: 100%;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 5em;
+}
+
+.nav-items li {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-items a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(278, 42%, 34%);
+    text-shadow: 1px 3px hsl(236, 44%, 64%);
+    padding: 1.5em;
+}
+
+/*Black in logo lettering is #373348*/
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1em 1em 1em 5em;
+}
 /* Intro & Headshot */
 
 .intro {
     border: 1px solid black;
     grid-area: bio;
-    background-color: cornflowerblue;
+    background-color: hsl(236, 44%, 64%);
     width: 100%;
 }
 
@@ -99,7 +132,9 @@ header, body, footer {
     font-weight: 750;
     padding: 1%;
     text-align: center;
-    text-shadow: 2px -2px whitesmoke;
+    color: hsl(251, 17%, 24%);
+    text-shadow: 1px 3px hsl(0, 0%, 80%);
+    padding: 1em 5em 1em 0em;
 }
 
 .headshot img{
