@@ -59,30 +59,16 @@ table {
 
 header, body, footer {
         font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
 }
 
-/*Master grid container */
 
-.container {
-    display: grid;
-    height: 100vh;
-    max-width: 100%;
-    margin: 0 auto;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "bio     bio"
-        "pro-img pro"
-        "pers    pers-img";
-    gap: 5px;
-
-}
 
 /* Header */
 
 .header {
     background-color: hsl(53, 33%, 68%);
-    height: 12vh;
+    height: 15vh;
 }
 
 .navbar {
@@ -104,7 +90,7 @@ header, body, footer {
 }
 
 .nav-items a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     font-weight: 700;
     color: hsl(278, 42%, 34%);
@@ -112,43 +98,81 @@ header, body, footer {
     padding: 1.5em;
 }
 
+
 /*Black in logo lettering is #373348*/
+
 .logo {
     max-width: 100%;
     max-height: 100%;
     padding: 1em 1em 1em 5em;
 }
+
+/*Master grid container */
+
+.container {
+    display: grid;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "bio     bio"
+        "pro-img pro"
+        "pers    pers-img";
+    gap: 5px;
+
+}
+
 /* Intro & Headshot */
 
 .intro {
-    border: 1px solid black;
     grid-area: bio;
     background-color: hsl(236, 44%, 64%);
     width: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 .intro h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 750;
-    padding: 1%;
     text-align: center;
     color: hsl(251, 17%, 24%);
     text-shadow: 1px 3px hsl(0, 0%, 80%);
-    padding: 1em 5em 1em 0em;
+    padding: 1em 3em 1em 1.5em;
+    order: 0;
+}
+
+.bio {
+    display: flex;
+}
+
+.bio p {
+    font-size: 1.25rem;
+    padding: 0 25%;
+    font-weight: 500;
+}
+
+.headshot {
+    display: flex;
+    order: 1;
+    height: auto;
+    margin-left: 10em;
+    padding-bottom: 2%;
 }
 
 .headshot img{
+    display: flex;
+    object-fit: contain;
     grid-area: hshot;
-    background-color: brown;
-    width: 50vw;
+    width: 30vw;
 }
 
 .text {
-    width: 55vw;
     background-color: chartreuse;
 }
 
 .image {
-    width: 45vw;
-    background-color: darksalmon;
+
 }
