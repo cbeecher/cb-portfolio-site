@@ -82,7 +82,13 @@ h4 {
     font-weight: 450;
 }
 
+h5 {
+    font-size: 1.15rem;
+}
 
+a {
+    text-decoration: none;
+}
 /* Header */
 
 .header {
@@ -136,7 +142,9 @@ h4 {
     grid-template-areas: 
         "bio      bio"
         "pro      pro-img"
-        "pers-img pers";
+        "pers-img pers"
+        "work     form";
+
     gap: 5px;
     grid-auto-flow: column;
 
@@ -247,3 +255,31 @@ h4 {
     background-color: hsl(16, 97%, 45%);
 }
 
+/*Projects Section*/
+.work {
+    width: 100%;
+    height: 30vh;
+}
+
+/*Contact form*/
+.form {
+
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+span.address {
+    display: flex;
+
+}
+.address {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
