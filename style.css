@@ -59,16 +59,35 @@ table {
 
 header, body, footer {
         font-family: 'Raleway', sans-serif;
-        line-height: 1.5;
+        line-height: 1.75;
 }
 
+h1 {
+    font-size: 2rem;
+    font-weight: 750;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 650;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 450;
+}
 
 
 /* Header */
 
 .header {
     background-color: hsl(53, 33%, 68%);
-    height: 15vh;
+    height: 12vh;
 }
 
 .navbar {
@@ -90,11 +109,10 @@ header, body, footer {
 }
 
 .nav-items a {
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-decoration: none;
     font-weight: 700;
-    color: hsl(278, 42%, 34%);
-    text-shadow: 1px 3px hsl(236, 44%, 64%);
+    color: hsl(251, 17%, 24%);
     padding: 1.5em;
 }
 
@@ -111,16 +129,16 @@ header, body, footer {
 
 .container {
     display: grid;
-    height: 100vh;
     max-width: 100%;
     margin: 0 auto;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        "bio     bio"
-        "pro-img pro"
-        "pers    pers-img";
+        "bio      bio"
+        "pro      pro-img"
+        "pers-img pers";
     gap: 5px;
+    grid-auto-flow: column;
 
 }
 
@@ -135,8 +153,7 @@ header, body, footer {
 }
 
 .intro h1 {
-    font-size: 3rem;
-    font-weight: 750;
+
     text-align: center;
     color: hsl(251, 17%, 24%);
     text-shadow: 1px 3px hsl(0, 0%, 80%);
@@ -149,9 +166,9 @@ header, body, footer {
 }
 
 .bio p {
-    font-size: 1.25rem;
     padding: 0 25%;
     font-weight: 500;
+    
 }
 
 .headshot {
@@ -165,14 +182,68 @@ header, body, footer {
 .headshot img{
     display: flex;
     object-fit: contain;
-    grid-area: hshot;
     width: 30vw;
 }
 
-.text {
-    background-color: chartreuse;
+/*"The Programmer" section */
+
+.pro {
+    display: flex;
+    grid-area: pro;
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(278, 42%, 34%);
+    max-height: 100%;
+    height: 40vh;
+    max-width: 100%;
+    padding: 1em 2em;
+    /*Might add margin-left 25% & margin-right 25% @ pro-img */
 }
 
-.image {
-
+.pro p {
+    width: 80%;
 }
+
+.pro-img {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: pro-img;
+    background-color: hsl(278, 42%, 34%);
+    max-height: 100%;
+    height: 40vh;
+    max-width: 100%;
+    padding: 1em 2em;
+}
+
+.pro-img img{
+    width: 20%;
+    height: min-content;
+}
+
+/*"The Person" section*/
+
+.pers-img {
+    display: flex;
+    justify-content: center;
+    grid-area: pers-img;
+    background-color: hsl(16, 97%, 45%);
+    height: 40vh;
+    max-width: 100%;
+    
+}
+
+.pers-img img {
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.pers {
+
+    grid-area: pers;
+    height: 40vh;
+    max-width: 100%;
+
+    background-color: hsl(16, 97%, 45%);
+}
+
