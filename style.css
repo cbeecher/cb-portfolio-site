@@ -277,7 +277,7 @@ a {
 /*Contact form*/
 .form {
     max-width: 100%;
-    padding: 1em;
+    padding: 1em 5em 0 2em;
     border-radius: 4px;
     background-color: hsl(252, 17%, 54%);
 }
