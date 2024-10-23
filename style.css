@@ -235,7 +235,7 @@ a {
     display: flex;
     justify-content: center;
     grid-area: pers-img;
-    background-color: hsl(16, 97%, 45%);
+    background-color: hsl(53, 33%, 68%);
     height: 40vh;
     max-width: 100%;
     
@@ -247,18 +247,23 @@ a {
 }
 
 .pers {
-
     grid-area: pers;
     height: 40vh;
     max-width: 100%;
-
-    background-color: hsl(16, 97%, 45%);
+    background-color: hsl(53, 33%, 68%);
 }
 
 /*Projects Section*/
 .work {
-    width: 100%;
+    max-width: 100%;
     height: 30vh;
+    padding-left: 2em;
+    background-color: hsl(252, 17%, 54%);
+}
+
+.work a {
+    font-weight: 700;
+
 }
 
 /*Contact form*/
