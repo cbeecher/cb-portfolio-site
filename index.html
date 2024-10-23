@@ -55,7 +55,9 @@
                     <img src="/Resources/icons/js-logo.svg" alt="JavaScript logo" />
                     <img src="/Resources/icons/Node.js_logo.svg" alt="Node.js logo" />
                 </section>
-                <!--"The Person" section-->
+
+                <!--"The Person" section (removing for now until I figure out layout)
+
                 <section class="pers-img">
                     <img src="/Resources/lu-facing-left.jpeg" alt="the queen of the world" />
                 </section>
@@ -64,6 +66,10 @@
                         <p>When I'm not coding you'll probably find me hanging with my partner and my dog, tweaking my fantasy football team or getting swole at the gym. </p>
                     </div>
                 </section>
+
+                REMEMBER TO SET GRID-AREAS AGAIN!!! -->
+
+                <!--Projects section-->
                 <section class="work">
                     <h2>This is where I will link my projects</h2>
                     <ul class="projects">
@@ -73,15 +79,14 @@
                         <li><a href="#">Project 4</a></li>
                     </ul>
                 </section>
+
+                <!--Contact form-->
                 <section class="form">
                     <h2>This will be the contact form</h2>
                     <form>
                         
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" placeholder="Peter" required>
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname" placeholder="Griffin" required>
+                        <label for="name">Name</label>
+                        <input type="text" id="fname" name="name" placeholder="Peter Griffin" required>
 
                         <label for="email">Email</label>
                         <input type="text" id="email" name="email" placeholder="you@domain.com" required>
@@ -89,15 +94,11 @@
                         <label for="phone">Phone</label>
                         <input type="text" id="phone" name="phone" placeholder="555-555-5555" required>
 
-                        <label for="LinkedIn">LinkedIn (Optional)</label>
-                        <input type="text" id="linkedin" name="linkedin">
-
                         <label for="contact-method">Preferred Method of Contact</label>
                         <select id="contact-method" name="contact-method" required>
                             <option value="call">Call</option>
                             <option value="email">Email</option>
                             <option value="text">Text</option>
-                            <option value="dm">LinkedIn Message</option>
                         </select>
 
                         <label for="subject">Subject</label>
@@ -110,8 +111,8 @@
                 </section>
             </main>
             <footer class="footer">
-                <h5>Casey Beecher</h5>
                 <address>
+                    <span class="address">Casey Beecher</span>
                     <span class="address">Syracuse, NY </span>
                     <span class="address">315.569.7791</span>
                     <span class="address">beecher.cl@gmail.com</span>
