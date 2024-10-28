@@ -81,28 +81,60 @@
                 </section>
 
                 <!--Contact form-->
-                <section class="form">
+                <section id="form">
                     <h2>This will be the contact form</h2>
                     <form>
                         
                         <label for="name">Name</label>
-                        <input type="text" id="fname" name="name" placeholder="Peter Griffin" required>
+                        <input 
+                            type="text" 
+                            id="fname" 
+                            name="name" 
+                            placeholder="Peter Griffin" 
+                            required>
 
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="you@domain.com" required>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            size="64"
+                            maxlength="64"
+                            placeholder="you@domain.com"
+                            required
+                            pattern="^[\w\.\-]*@[\w\-]*\.[\w]{2,4}$"
+                            title="Please provide a valid email address" />
 
                         <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" placeholder="555-555-5555" required>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="555-555-5555"
+                            minlength="12"
+                            maxlength="12"
+                            required
+                            pattern="^\d{3}-\d{3}-\d{4}$">
 
                         <label for="contact-method">Preferred Method of Contact</label>
-                        <select id="contact-method" name="contact-method" required>
-                            <option value="call">Call</option>
-                            <option value="email">Email</option>
-                            <option value="text">Text</option>
+                        <select
+                            id="contact-method"
+                            name="contact-method"
+                            required>
+                                <option value="call">Call</option>
+                                <option value="email">Email</option>
+                                <option value="text">Text</option>
                         </select>
 
                         <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Talk to me!" rows="8" cols="30" minlength="50" wrap="hard">
+                        <textarea
+                        id="subject"
+                        name="subject"
+                        placeholder="Talk to me!"
+                        rows="8"
+                        cols="30"
+                        minlength="50"
+                        wrap="hard">
 
                         </textarea>
 
@@ -118,6 +150,6 @@
                     <span class="address">beecher.cl@gmail.com</span>
                 </address>
             </footer>
-            <script src="" async defer></script>
+            <script src="script.js" async defer></script>
     </body>
 </html>
