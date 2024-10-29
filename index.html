@@ -88,9 +88,13 @@
                         <label for="name">Name</label>
                         <input 
                             type="text" 
-                            id="fname" 
+                            id="name" 
                             name="name" 
-                            placeholder="Peter Griffin" 
+                            placeholder="Peter Griffin"
+                            minlength="4"
+                            maxlength="50"
+                            pattern="[a-z ,.'-]+"
+                            title="Please provide a first and last name."
                             required>
 
                         <label for="email">Email</label>
@@ -102,8 +106,8 @@
                             maxlength="64"
                             placeholder="you@domain.com"
                             required
-                            pattern="^[\w\.\-]*@[\w\-]*\.[\w]{2,4}$"
-                            title="Please provide a valid email address" />
+                            pattern="[\w\.\-]*@[\w\-]*\.[\w]{2,4}"
+                            title="Please provide a valid email address." />
 
                         <label for="phone">Phone</label>
                         <input
@@ -127,17 +131,15 @@
                         </select>
 
                         <label for="subject">Subject</label>
-                        <textarea
-                        id="subject"
-                        name="subject"
-                        placeholder="Talk to me!"
-                        rows="8"
-                        cols="30"
-                        minlength="50"
-                        wrap="hard">
-
-                        </textarea>
-
+                            <textarea
+                                id="subject"
+                                name="subject"
+                                placeholder="Talk to me!"
+                                rows="8"
+                                cols="30"
+                                minlength="50"
+                                wrap="hard"
+                            ></textarea>
                         <input type="submit" value="Submit">
                     </form>
                 </section>
